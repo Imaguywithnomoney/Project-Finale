@@ -1,0 +1,142 @@
+/* About UEP */
+.about {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+.logoside {
+    flex: 40%;
+    position: relative;
+    overflow: hidden;
+}
+.logoside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.abouttxt span:first-child {
+    font-size: 30px;
+}
+.abouttxt {
+    max-width: 900px;
+    width: 100%;
+    flex-direction: column;
+    flex: 60%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #999999;
+    color: white;
+    text-align: justify;
+    font-size: 16px;
+}
+.vision, .mission {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 40px;
+    background-color:  #555555;
+}
+.vision span:first-child, .mission span:first-child {
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+.vision span, .mission span {
+    max-width: 1400px;
+    width: 100%;
+    font-size: 25px;
+}
+.mission {
+    background-color: #555555;
+}
+
+/* Picture of uep */
+.UEPfront {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.pic1 { 
+    -webkit-user-drag: none;
+    user-select: none;
+    display: block;
+    object-fit: cover;
+    background-position: center;
+    height: 300px;
+    Width: 100%;
+    -webkit-filter: blur(10px);
+    filter: brightness(30%);
+}
+.centertext {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centertext div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name1 {
+    display: block;
+    color: #FF4D00;
+    font-size: 30px;
+    transition: all 0.6s;
+    margin-bottom: 5px;
+}
+.name2 a, .name2 p {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        height: auto;
+    }
+    .logoside {
+        width: 100%;
+        height: 200px;
+    }
+    .logoside img {
+        position: static;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .abouttxt {
+        font-size: 12px;
+        width: 100%;
+        padding: 35px;
+        text-align: justify;
+    }
+    .abouttxt span:first-child {
+        font-size: 30px;
+    }
+    .vision span, .mission span {
+        font-size: 14px;
+    }
+    .vision span:first-child, .mission span:first-child {
+        font-size: 30px;
+    }
+    .name1 {
+        font-size: 25px;
+    }
+    .name2 a, .name2 p {
+        font-size: 10px;
+    }
+    .pic1 {
+        height: 200px;
+    }
+}

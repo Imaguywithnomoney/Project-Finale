@@ -1,0 +1,165 @@
+/* Photo */
+.UEPfront {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.pic1 {
+    -webkit-user-drag: none;
+    user-select: none;
+    display: block;
+    object-fit: cover;
+    background-position: center;
+    height: 500px;
+    Width: 100%;
+    -webkit-filter: blur(10px);
+    filter: brightness(60%);
+}
+
+/* Text inside the photo */
+.centertext {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.centertext div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name1 {
+    display: block;
+    color: #FF4D00;
+    font-size: 30px;
+    transition: all 0.6s;
+    margin-bottom: 5px;
+}
+.name1:hover {
+    color: #FF4D00;
+    transform: scale(1.1);
+}
+.name2 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+.btn1 {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #FF4D00;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn1:hover {
+    background-color: #e04300;
+}
+.d2 {
+    background-color: white;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d1 span:first-child {
+    font-size: 40px;
+    color: #FF4D00;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.d1 span:nth-child(2) {
+    font-size: 18px;
+    color: #FFD700;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.d1 {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+}
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 70vh;
+    background-color: #f5f5f5;
+}
+.news2 {
+    max-width: 1200px;
+    width: 100%;
+    padding: 50px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .UEPfront img {
+    display: block;
+    object-fit: cover;
+    background-position: center;
+    height: 290px;
+    Width: 100%;
+    }
+    .centertext {
+        width: auto;
+    }
+    .centertext span.name1 {
+        font-size: 15px;
+        transition: all 0.1s;
+    }
+    .centertext span.name2 {
+        font-size: 10px;
+        transition: all 0.1s;
+    }
+    .d2 {
+        height: auto;
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+
+    .d1 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .d1 span:first-child {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+
+    .d1 span:nth-child(2) {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .news {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .news2 {
+        padding: 20px;
+        height: auto;
+        font-size: 1rem;
+    }
+    .btn1 {
+    font-size: 8px;
+    }
+}
